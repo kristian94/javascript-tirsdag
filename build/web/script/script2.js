@@ -1,14 +1,16 @@
 var divs = document.getElementsByTagName("DIV");
 console.log(divs.length);
 
+
+
 divs[0].onclick = function(){
-    divs[0].innerHTML = "clicked";
+    console.log("clicked first div");
 };
 divs[1].onclick = function(){
-    divs[1].innerHTML = "clicked";
+    console.log("clicked second div");
 };
 divs[2].onclick = function(){
-    divs[2].innerHTML = "clicked";
+    console.log("clicked third div");
 };
 
 divs[0].onmouseover = function(){

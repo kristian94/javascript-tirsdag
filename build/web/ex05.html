@@ -7,23 +7,23 @@ and open the template in the editor.
 <html>
     <head>
         <title>TODO supply a title</title>
-        <meta charset="UTF-8"><script src="script/script3.js" type="text/javascript"></script>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
     <body>
-        <form onsubmit="formSub()" action="" method="post">
-            name: <input type="text" name="name"><br>
-            age: <input type="text" name="age"><br>
-            male: <input type="radio" name="gender" id="male"><br>
-            female: <input type="radio" name="gender" id="female">
+        <form id="myForm">
+            name: <input type="text" id="name"><br>
+            age: <input type="text" id="age"><br>
+            male: <input type="radio" name="g" id="male" value="male"><br>
+            female: <input type="radio" name="g" id="female" value="female">
             <h4>Hobbies</h4>
             fishing: <input type="checkbox" name="hobby" id="fishing"><br>
             collecting stamps: <input type="checkbox" name="hobby" id="stamps"><br>
             hiking<input type="checkbox" name="hobby" id="hiking"><br>
-            <button type="submit">Submit</button>
+            
         </form>
-        
+        <button id="btn">Submit</button>
         <script src="script/script3.js" type="text/javascript"></script>
     </body>
 </html>

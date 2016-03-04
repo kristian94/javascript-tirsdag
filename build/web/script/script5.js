@@ -7,7 +7,10 @@ for (var i = 1, max = divs.length-1; i < max; i++) {
     
     (function(i){
         divs[i].onclick = function(){
-            if(displayed !== undefined)displayed += divs[i].innerHTML;
+            if(displayed !== undefined){
+                if(divs[i].innerHTML == ",") displayed += ".";
+                else displayed += divs[i].innerHTML;
+            }
             else displayed = divs[i].innerHTML;
             update();
         };
